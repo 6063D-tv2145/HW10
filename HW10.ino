@@ -48,14 +48,14 @@ void loop() {
     digitalWrite(6, LOW);
   }
 
-  if ((currentTime - LedTimer[5]) >= 60000 && (currentTime - LedTimer[5]) <= 60000) {
+  if ((currentTime - LedTimer[5]) >= 60000) {
     digitalWrite(7, HIGH);
   } else {
     digitalWrite(7, LOW);
   }
 
 // is the elapsed time more than 60 seconds?
-  if ((currentTime - LedTimer[0]) >= 60001) {
+  if ((currentTime - LedTimer[0]) >= 60100) {
     for (int i = 0; i < 6; i++) {
       // if so, reset the led timer
       LedTimer[i] = currentTime;
